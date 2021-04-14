@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: MyString
+  type: 
+  temperture: 1
+  rainy_percent: 1
+
+two:
+  day: MyString
+  type: 
+  temperture: 1
+  rainy_percent: 1

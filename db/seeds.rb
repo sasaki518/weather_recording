@@ -1,0 +1,7 @@
+Weather.create(day: "４月１日", weather: "晴れ", temperture: 21, rainy_percent: 20)
+Weather.create(day: "４月２日", weather: "晴れ", temperture: 23, rainy_percent: 10)
+Weather.create(day: "４月３日", weather: "曇り", temperture: 19, rainy_percent: 40)
+Weather.create(day: "４月４日", weather: "曇り", temperture: 18, rainy_percent: 50)
+Weather.create(day: "４月５日", weather: "雨", temperture: 14, rainy_percent: 80)
+Weather.create(day: "４月６日", weather: "曇り", temperture: 16, rainy_percent: 40)
+Weather.create(day: "４月７日", weather: "晴れ", temperture: 20, rainy_percent: 20)

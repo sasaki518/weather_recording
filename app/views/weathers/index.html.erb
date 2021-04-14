@@ -1,0 +1,25 @@
+<h1 class="display-6">１週間の天気予報</h1>
+<table class="table">
+    <tr>
+        <td>月日</td>
+        <td>天気</td>
+        <td>気温</td>
+        <td>降水確率</td>
+    </tr>
+    <tr>
+        <% @weather.each do |weather| %>
+        <td><%= weather.day %></td>
+        <td><%= weather.weather %></td>
+        <td><%= weather.temperture %>℃</td>
+        <td><%= weather.rainy_percent %>％</td>
+        <td>
+            <%= link_to "詳細", weather_path(weather), class: "btn btn-info" %>
+            <%= link_to "編集", edit_weather_path(weather), class: "btn btn-warning" %>
+            <%= link_to "削除", weather_path(weather), method: "delete", data: {confirm: '本当に削除しますか？' }, class: "btn btn-danger" %>
+        </td>
+        <td>
+             <%= link_to "新規", "/weathers/new", class: "btn btn-primary" %>
+        </td>
+    </tr>
+       <% end %>
+</table>

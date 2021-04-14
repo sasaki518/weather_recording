@@ -1,0 +1,20 @@
+<h5>１日の天気</h5>
+<table class=table>
+    <tr>
+        <th>月日</th>
+        <td><%= @weather.day %></td>
+    </tr>
+    <tr>
+        <th>天気</th>
+        <td><%= @weather.weather %></td>
+    </tr>
+    <tr>
+        <th>気温</th>
+        <td><%= @weather.temperture %>℃</td>
+    </tr>
+    <tr>
+        <th>降水確率</th>
+        <td><%= @weather.rainy_percent %>%</td>
+    </tr>
+</table>
+<%= link_to "戻る", weathers_path, class: "btn btn-success" %>
